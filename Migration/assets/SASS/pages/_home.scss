@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+    }
+}
+body {
+    background-color: $body-b-color;
+}
+
+.card-view {
+    margin-top: 50px;
+
+    .container {
+        background-color: $card-b-color;
+        .row {
+            .header {
+                color: $text-color-1;
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px solid $border-color;
+                background-color: $card-b-color-2;
+                i {
+                    color: $green;
+                    font-size: 40px;
+                    padding-top: 15px;
+                }
+                p {
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+            }
+            .main {
+                margin-top: 40px;
+                padding-left: 100px;
+                padding-right: 100px;
+                #first-part {
+                    border-bottom: 1px solid $border-color;
+                    display: flex;
+
+                    .left {
+                        margin-bottom: 20px;
+                        width: 500px;
+                        h5 {
+                            color: $text-color-1;
+                            font-weight: bold;
+                        }
+                        p {
+                            margin-top: 30px;
+                            i {
+                                color: $purple;
+                                margin-right: 5px;
+                            }
+                        }
+                        button {
+                            margin-top: 40px;
+                            @extend #Button;
+                        }
+                    }
+                    .right {
+                        margin-bottom: 20px;
+                        text-align: center;
+                        justify-content: center;
+                        img {
+                            height: 250px;
+                        }
+                    }
+                }
+                #second-part {
+                    margin-top: 20px;
+
+                    .header {
+                        align-items: center;
+                        text-align: center;
+                        justify-content: space-between;
+                        border: none;
+                        background: none;
+                        margin-bottom: -20px;
+                        .left {
+                            h6 {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                        .right {
+                            button {
+                                background: none;
+                                border: none;
+                                font-weight: bold;
+                                span {
+                                    padding: 0;
+                                    margin: 0;
+                                    color: $purple;
+                                }
+                                i {
+                                    padding: 0;
+                                    margin: 0;
+                                    font-size: 20px;
+                                    color: $purple;
+                                }
+                            }
+                        }
+                    }
+                    .main {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        margin-bottom: 50px;
+                        table {
+                            align-items: center;
+                            width: 100%;
+                            text-align: center;
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            box-shadow: 0 2px 12px $border-color;
+                            border-radius: 5px;
+                            th,
+                            td {
+                                border-bottom: 1px solid $border-color;
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer {
+                background-color: $card-b-color-2;
+                border-top: 1px $border-color;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid $border-color;
+                .left {
+                    margin-top: 15px;
+                    height: 50px;
+                    @extend #Button;
+                }
+                .right {
+                    margin-top: 15px;
+                    height: 50px;
+                    @extend #Button;
+                    background-color: $purple;
+                    color: $text-color-2;
+                }
+            }
+        }
+    }
+}
